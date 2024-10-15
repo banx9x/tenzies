@@ -1,0 +1,157 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 600px;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.instructions {
+  font-size: 16px;
+  line-height: 24px;
+  width: 400px;
+  margin-bottom: 4px;
+}
+
+.icons {
+  margin-bottom: 24px;
+}
+
+.dice-score {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 16px;
+  margin-bottom: 32px;
+  place-content: center;
+}
+
+.dice-score__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding-inline: 24px;
+}
+
+.dice-score__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.dice-score__value {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.dices {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: auto;
+  gap: 16px;
+  justify-items: center;
+  place-items: center;
+  place-content: center;
+  margin-bottom: 24px;
+}
+
+.dice {
+  display: grid;
+  grid-template-columns: repeat(3, 12px);
+  grid-template-rows: repeat(3, 12px);
+  place-items: center;
+  gap: 2px;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 56px;
+  height: 56px;
+  padding: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.dice.held {
+  background-color: #ececec;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.dice.one .dot:nth-child(5) {
+  background-color: #1b1b1b;
+}
+
+.dice.two .dot:nth-child(1),
+.dice.two .dot:nth-child(9) {
+  background-color: #1b1b1b;
+}
+
+.dice.three .dot:nth-child(1),
+.dice.three .dot:nth-child(5),
+.dice.three .dot:nth-child(9) {
+  background-color: #1b1b1b;
+}
+
+.dice.four .dot:nth-child(1),
+.dice.four .dot:nth-child(3),
+.dice.four .dot:nth-child(7),
+.dice.four .dot:nth-child(9) {
+  background-color: #1b1b1b;
+}
+
+.dice.five .dot:nth-child(1),
+.dice.five .dot:nth-child(3),
+.dice.five .dot:nth-child(5),
+.dice.five .dot:nth-child(7),
+.dice.five .dot:nth-child(9) {
+  background-color: #1b1b1b;
+}
+
+.dice.six .dot:nth-child(1),
+.dice.six .dot:nth-child(3),
+.dice.six .dot:nth-child(4),
+.dice.six .dot:nth-child(6),
+.dice.six .dot:nth-child(7),
+.dice.six .dot:nth-child(9) {
+  background-color: #1b1b1b;
+}
+
+.dice-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.dice-button {
+  height: 48px;
+  padding-inline: 16px;
+  border-radius: 4px;
+  border: 0;
+  background-color: #919191;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}

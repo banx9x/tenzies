@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/dice.tsx","./src/components/dicebutton.tsx","./src/components/diceconfetti.tsx","./src/components/dicelist.tsx","./src/components/diceprovider.tsx","./src/components/dicescore.tsx","./src/hooks/usedice.ts"],"version":"5.6.3"}
